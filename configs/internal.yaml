@@ -1,0 +1,18 @@
+models:
+  face_detect:
+    model:  intel/face-detection-retail-0004/FP32/face-detection-retail-0004.xml
+    cpu_ext: extension/libcpu_extension_sse4.so
+    fd_input_height: 300
+    fd_input_width: 300
+    device: CPU
+    confidence_threshold: 0.9
+    roi_scale_factor: 1.15
+
+devices:
+  - CPU
+  - MYRIAD
+perf_stats: True
+queue_size: 16
+  
+
+
